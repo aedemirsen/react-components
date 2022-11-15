@@ -1,12 +1,13 @@
 import timeLineData from '../data';
-import TimeLineItem from "./TimeLineItem";
+import TimeLineElement from "./TimeLineElement";
 import React from "react";
 
 const TimeLine = () =>timeLineData.length > 0 && (
     <div className='timeline-container'>
         {
             timeLineData.map((data,index) =>
-                <TimeLineItem data={data} key={index}/>
+                <TimeLineElement data={data} key={index}/>
+
             )
         }
     </div>

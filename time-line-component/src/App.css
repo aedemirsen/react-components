@@ -35,8 +35,9 @@ body {
 .timeline-element{
     display: flex;
     justify-content: flex-end;
-   /* margin: 10px 0;*/
+    margin:10px 0;
     padding-right: 30px;
+    position: relative;
     width: 50%;
 }
 
@@ -49,13 +50,14 @@ body {
 .timeline-element-content{
     background-color: white;
     width: 500px;
+
     padding: 15px;
     max-width: 70%;
     border-radius: 5px;
     box-shadow: 0 0 2px black;
     display: flex;
     flex-direction: column;
-    text-align: right ;
+    text-align: right;
     align-items: flex-end;
     position: relative;
 }
@@ -86,3 +88,35 @@ body {
     border-top: white;
     left: -10px;
 }
+
+.timeline-element-content .title{
+    font-size: 30px;
+    position: absolute;
+    font-weight: bold;
+    letter-spacing: 2px;
+    left: 10px;
+    top: 10px;
+    text-transform: uppercase;
+}
+
+.timeline-element:nth-child(odd) .timeline-element-content .title{
+    left: auto;
+    right: 10px;
+}
+
+.timeline-element-content .dot{
+    background-color: white;
+    z-index: 100;
+    border: 4px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: -40px;
+}
+
+.timeline-element:nth-child(odd) .timeline-element-content .dot{
+    left: -40px;
+}
+
