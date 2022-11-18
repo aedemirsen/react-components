@@ -1,8 +1,8 @@
 import React from 'react'
 import { ServicesContainer, ServicesH1, ServicesWrapper, ServicesCard, ServicesIcon, ServicesH2, ServicesP } from './WhyThisProgramElements'
-import Icon1 from '/Users/hp/development/react-components/why-this-program/src/images/invitationprogram.png'
-import Icon2 from '/Users/hp/development/react-components/why-this-program/src/images/capitalAccess.png'
-import Icon3 from '/Users/hp/development/react-components/why-this-program/src/images/wclassmentor.png'
+import Icon1 from '../images/invitationprogram.png'
+import Icon2 from '../images/capitalAccess.png'
+import Icon3 from '../images/wclassmentor.png'
 const WhyThisProgram = () => {
   return (
     <ServicesContainer id="services">
